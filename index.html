@@ -14,6 +14,46 @@
             <p class="tagline">my first website</p>
             <button class="contact-btn" onclick="window.location.href='mailto:gessica.tortolano@slalom.com'">Contact Me</button>
         </div>
+    <div class="carousel">
+        <div class="carousel-track">
+            <div class="carousel-slide active">
+                <h2>Design Services</h2>
+                <p>Creative solutions for branding, web, and product design.</p>
+            </div>
+            <div class="carousel-slide">
+                <h2>UX/UI</h2>
+                <p>Intuitive user experiences and beautiful interfaces for your users.</p>
+            </div>
+            <div class="carousel-slide">
+                <h2>Accelerate with Design</h2>
+                <p>Like Verstappen on the track, we use design to speed up your business outcomes.</p>
+            </div>
+        </div>
+        <button class="carousel-btn prev" aria-label="Previous">&#10094;</button>
+        <button class="carousel-btn next" aria-label="Next">&#10095;</button>
+    </div>
     </div>
 </body>
+<script>
+const track = document.querySelector('.carousel-track');
+const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+const nextBtn = document.querySelector('.carousel-btn.next');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+let current = 0;
+
+function showSlide(idx) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === idx);
+    });
+}
+
+nextBtn.addEventListener('click', () => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+});
+prevBtn.addEventListener('click', () => {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+});
+</script>
 </html>
