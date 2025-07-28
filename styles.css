@@ -1,16 +1,16 @@
 /* Navigation Bar */
 .main-nav {
     width: 100%;
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    padding: 0.5rem 0;
+    background: transparent;
+    box-shadow: none;
+    padding: 0.5rem 0 0.5rem 2.5rem;
     position: sticky;
     top: 0;
     z-index: 10;
 }
 .main-nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2.5rem;
     list-style: none;
     margin: 0;
@@ -24,6 +24,7 @@
     padding: 0.5rem 0.8rem;
     border-radius: 4px;
     transition: background 0.15s, color 0.15s;
+    background: transparent;
 }
 .main-nav a:hover, .main-nav a:focus {
     background: #e6f0ff;
