@@ -1,3 +1,167 @@
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #fff;
+    color: #111;
+}
+
+/* Nike-style Header */
+.nike-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 3rem 1.2rem 2rem;
+    background: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo {
+    font-weight: 900;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    color: #111;
+    font-family: 'Inter', Arial, sans-serif;
+}
+.nike-nav ul {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nike-nav a {
+    text-decoration: none;
+    color: #14213d;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 0.5rem 0.8rem;
+    background: transparent;
+    transition: color 0.15s, text-decoration 0.15s;
+}
+.nike-nav a:hover, .nike-nav a:focus {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.nike-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 4rem 6vw 3rem 6vw;
+    background: #fff;
+    min-height: 60vh;
+    box-sizing: border-box;
+}
+.nike-hero-content {
+    max-width: 500px;
+}
+.nike-hero-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0 0 1.2rem 0;
+    letter-spacing: -0.03em;
+}
+.nike-hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2.2rem;
+    color: #222;
+}
+.nike-cta {
+    display: inline-block;
+    background: #111;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.9rem 2.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: background 0.2s, color 0.2s;
+}
+.nike-cta:hover, .nike-cta:focus {
+    background: #14213d;
+    color: #fff;
+}
+.nike-hero-img {
+    width: 420px;
+    max-width: 40vw;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+}
+
+@media (max-width: 900px) {
+    .nike-hero {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2.5rem 4vw 2rem 4vw;
+    }
+    .nike-hero-img {
+        max-width: 90vw;
+        width: 100%;
+    }
+}
+
+/* Services Section */
+.nike-services {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: stretch;
+    padding: 3rem 6vw 4rem 6vw;
+    background: #f7f7f7;
+}
+.nike-service-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 2rem 1.2rem 2.5rem 1.2rem;
+    flex: 1 1 0;
+    min-width: 220px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.nike-service-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+.nike-service-card img {
+    width: 100%;
+    max-width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.nike-service-card h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+    color: #111;
+    font-weight: 700;
+}
+.nike-service-card p {
+    margin: 0;
+    color: #444;
+    font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+    .nike-services {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .nike-service-card {
+        max-width: 90vw;
+    }
+}
 /* Navigation Bar */
 .main-nav {
     width: 100%;
