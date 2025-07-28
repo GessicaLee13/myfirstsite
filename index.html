@@ -15,45 +15,24 @@
             <button class="contact-btn" onclick="window.location.href='mailto:gessica.tortolano@slalom.com'">Contact Me</button>
         </div>
     <div class="carousel">
-        <div class="carousel-track">
-            <div class="carousel-slide active">
-                <h2>Design Services</h2>
-                <p>Creative solutions for branding, web, and product design.</p>
+        <div class="carousel-track three-across">
+            <div class="carousel-card">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="UX Design" class="carousel-img">
+                <h2>UX Design</h2>
+                <p>Crafting seamless user journeys and research-driven experiences.</p>
             </div>
-            <div class="carousel-slide">
-                <h2>UX/UI</h2>
-                <p>Intuitive user experiences and beautiful interfaces for your users.</p>
+            <div class="carousel-card">
+                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80" alt="UI Design" class="carousel-img">
+                <h2>UI Design</h2>
+                <p>Beautiful, modern interfaces that delight and engage users.</p>
             </div>
-            <div class="carousel-slide">
-                <h2>Accelerate with Design</h2>
-                <p>Like Verstappen on the track, we use design to speed up your business outcomes.</p>
+            <div class="carousel-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Accelerated Prototyping" class="carousel-img">
+                <h2>Accelerated Prototyping</h2>
+                <p>Rapid design sprints to get your ideas on track—fast, like Verstappen.</p>
             </div>
         </div>
-        <button class="carousel-btn prev" aria-label="Previous">&#10094;</button>
-        <button class="carousel-btn next" aria-label="Next">&#10095;</button>
     </div>
     </div>
 </body>
-<script>
-const track = document.querySelector('.carousel-track');
-const slides = Array.from(document.querySelectorAll('.carousel-slide'));
-const nextBtn = document.querySelector('.carousel-btn.next');
-const prevBtn = document.querySelector('.carousel-btn.prev');
-let current = 0;
-
-function showSlide(idx) {
-    slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === idx);
-    });
-}
-
-nextBtn.addEventListener('click', () => {
-    current = (current + 1) % slides.length;
-    showSlide(current);
-});
-prevBtn.addEventListener('click', () => {
-    current = (current - 1 + slides.length) % slides.length;
-    showSlide(current);
-});
-</script>
 </html>
