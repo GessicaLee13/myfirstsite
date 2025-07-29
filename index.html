@@ -3,65 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My First Site</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+    <title>Gessica Tortolano | My First Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="nike-header">
-        <div class="logo">GESSICA</div>
+    <header class="nike-header" id="main-header">
+        <div class="logo">Gessica</div>
         <nav class="nike-nav">
             <ul>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contact Me</a></li>
                 <li><a href="#case-studies">Case Studies</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="nike-hero">
-            <div class="nike-hero-content">
-                <h1>Design That Moves Fast</h1>
-                <p>Accelerate your business with world-class UX, UI, and rapid prototyping—crafted for impact.</p>
-                <a href="#services" class="nike-cta">Explore Services</a>
-            </div>
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Picasso style design" class="nike-hero-img">
-        </section>
-        <section class="social-proof-bar">
-            <div class="social-proof-quote">“Gessica’s design sprint took our product from idea to launch in record time.” <span class="customer">– Alex, Startup Founder</span></div>
-            <div class="social-proof-quote">“The new UX/UI doubled our user engagement. Highly recommend!” <span class="customer">– Priya, Product Manager</span></div>
-            <div class="social-proof-quote">“Fast, creative, and always on brand. We love working with Gessica.” <span class="customer">– Marco, Marketing Lead</span></div>
-        </section>
-        <section class="nike-services" id="services">
-            <div class="nike-service-card">
-                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="UX Design">
-                <h2>UX Design</h2>
-                <p>Seamless journeys, research-driven experiences.</p>
-            </div>
-            <div class="nike-service-card">
-                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80" alt="UI Design">
-                <h2>UI Design</h2>
-                <p>Modern, beautiful interfaces that engage and delight.</p>
-            </div>
-            <div class="nike-service-card">
-                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Accelerated Prototyping">
-                <h2>Accelerated Prototyping</h2>
-                <p>Rapid sprints to get your ideas on track—fast, like Verstappen.</p>
-            </div>
+    <script>
+    // Navigation scroll effect: transparent until scroll, then solid background
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('.nike-header');
+      if (window.scrollY > 20) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    </script>
+</body>
+</html>
+        <section id="case-studies" style="padding: 4rem 0 2rem 0; text-align: center;">
+            <h2>Case Studies</h2>
+            <p>Coming soon...</p>
         </section>
     </main>
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 30) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
-<script>
-// Navigation scroll effect: transparent until scroll, then solid background
-window.addEventListener('scroll', function() {
-  const header = document.querySelector('.nike-header');
-  if (window.scrollY > 20) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-});
-</script>
 </html>

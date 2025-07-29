@@ -13,11 +13,11 @@
 .social-proof-quote {
     flex: 1 1 0;
     font-size: 1.1rem;
-    color: #222;
+    color: #fff;
     font-style: italic;
-    background: #fff;
+    background: #111;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
     padding: 1.2rem 1.5rem;
     margin: 0;
     display: flex;
@@ -54,6 +54,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
     padding: 1.2rem 2rem 1.2rem 2rem;
     box-sizing: border-box;
     background: rgba(255,255,255,0.0);
@@ -78,7 +79,7 @@ main {
     letter-spacing: 0.1em;
     color: #111;
     font-family: 'Poppins', 'Inter', Arial, sans-serif;
-    margin-right: 0;
+    position: static;
     margin-bottom: 0.3rem;
 }
 .nike-nav ul {
