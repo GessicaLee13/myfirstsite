@@ -51,9 +51,11 @@ body {
 /* Nike-style Header */
 .nike-header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 1.2rem 3rem 1.2rem 2rem;
+    justify-content: center;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    box-sizing: border-box;
     background: rgba(255,255,255,0.0);
     position: fixed;
     width: 100%;
@@ -76,13 +78,29 @@ main {
     letter-spacing: 0.1em;
     color: #111;
     font-family: 'Poppins', 'Inter', Arial, sans-serif;
+    margin-right: 0;
+    margin-bottom: 0.3rem;
 }
 .nike-nav ul {
     display: flex;
-    gap: 2.5rem;
+    gap: 1.5rem;
     list-style: none;
     margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+@media (max-width: 700px) {
+  .nike-header {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  .nike-nav ul {
+    gap: 1rem;
+  }
+}
 }
 .nike-nav a {
     text-decoration: none;
