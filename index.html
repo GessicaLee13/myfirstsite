@@ -15,11 +15,76 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact Me</a></li>
                 <li><a href="#case-studies">Case Studies</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Apple-style Hero Section -->
+        <section class="apple-hero">
+            <h1>Experience Innovation</h1>
+            <p>Discover the future of technology, design, and creativity.</p>
+            <img src="https://www.apple.com/v/home/ay/images/heroes/iphone15pro/hero_iphone15pro__i70z9oz3hj2i_large_2x.jpg" alt="Apple Hero" class="hero-img">
+        </section>
+
+        <!-- Services Carousel 1 -->
+        <section class="apple-carousel" id="services">
+            <h2>Our Services</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <img src="https://www.apple.com/v/home/ay/images/promos/ipad-pro/promo_ipadpro__e6bl36n2hkeq_large_2x.jpg" alt="iPad Pro">
+                        <h3>Design Consulting</h3>
+                        <p>World-class design for your brand.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.apple.com/v/home/ay/images/promos/macbook-air/promo_macbookair__fek0g1qk6r2m_large_2x.jpg" alt="MacBook Air">
+                        <h3>Web Development</h3>
+                        <p>Modern, responsive websites.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.apple.com/v/home/ay/images/promos/apple-watch-series-9/promo_applewatch_series_9__x5wo4ptz2giu_large_2x.jpg" alt="Apple Watch">
+                        <h3>Brand Strategy</h3>
+                        <p>Grow your business with expert advice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Carousel 2 -->
+        <section class="apple-carousel">
+            <h2>Featured Solutions</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <img src="https://www.apple.com/v/home/ay/images/promos/airpods-pro/promo_airpodspro__e6bl36n2hkeq_large_2x.jpg" alt="AirPods Pro">
+                        <h3>Mobile Apps</h3>
+                        <p>Custom apps for iOS and Android.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.apple.com/v/home/ay/images/promos/apple-tv-4k/promo_appletv4k__e6bl36n2hkeq_large_2x.jpg" alt="Apple TV 4K">
+                        <h3>Video Production</h3>
+                        <p>Engaging video content for your brand.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.apple.com/v/home/ay/images/promos/homepod/promo_homepod__e6bl36n2hkeq_large_2x.jpg" alt="HomePod">
+                        <h3>Marketing Automation</h3>
+                        <p>Automate and optimize your campaigns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section id="case-studies" style="padding: 4rem 0 2rem 0; text-align: center;">
+            <h2>Case Studies</h2>
+            <p>Coming soon...</p>
+        </section>
+    </main>
     <script>
     // Navigation scroll effect: transparent until scroll, then solid background
     window.addEventListener('scroll', function() {
-      const header = document.querySelector('.nike-header');
-      if (window.scrollY > 20) {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 30) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
